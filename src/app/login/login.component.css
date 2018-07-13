@@ -1,0 +1,23 @@
+.card {
+  box-shadow: 12px 6px 13px 1px;
+  margin: 15% auto;
+  padding: 3%;
+  height: 200px;
+  width: 225px;
+  color: bisque;
+  background-color: white;
+}
+
+.input{
+  padding: 15% auto;
+  margin-bottom: 15px;
+}
+
+body {
+  background-image: url("../../assets/images/i.jpeg");
+  width: 100%;
+}
+.icenter{
+  margin: 2% 28%;
+
+}
