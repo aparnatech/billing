@@ -1,0 +1,117 @@
+table {
+    border-collapse: collapse;
+    border-radius: 30px;
+    box-shadow: 12px 12px 11px #333;
+    width: 90%;
+    background-color: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    height: 100%;
+
+}
+body{
+  margin:0;
+  background-image: url("./images/p1.jpg");
+  background-repeat: no-repeat;
+  width:100%;
+  height:100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+  overflow: hidden;
+  background-color: #333;
+  position:fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  height: 12px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+.k{
+  padding:10em 20em 10em 30em;
+  width: 50%;
+
+  height: 100%;
+}
+tr:nth-child(even){
+  background-color: #f2f2f2}
+.button {
+  border-radius: 4px;
+  background-color:#373B44;  /* fallback for old browsers */
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+  padding: 1%;
+  height: 40px;
+  position:relative;
+  margin: -20px -50px;
+  top:-800%;
+  left:46%;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 15px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: pink;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+a{
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
