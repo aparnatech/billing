@@ -1,0 +1,94 @@
+.feed{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  min-height: 700px;
+  background-color: white;
+  font-family: 'Marmelad', sans-serif;
+  font-family: 'Prociono', serif;
+  color:black;
+  border-color:green;
+  border-radius: 15px;
+  position: relative;
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.feed:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:100%;
+  bottom:0;
+  width:120%;
+  height:50px;
+  left:-10%;
+    right:-10%;
+    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.5), rgba(97, 97, 97, 0.0) 30%);
+    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.5), rgba(97, 97, 97, 0.0) 30%);
+}
+button{
+  color:black;
+  background-color: black;
+  position: relative;
+   background-color: #4CAF50;
+   border: none;
+   font-size: 12px;
+   color: #FFFFFF;
+   padding: 20px;
+   width: 50px;
+   text-align: center;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   text-decoration: none;
+   overflow: hidden;
+   cursor: pointer;
+}
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.feed:hover{
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.feed h3{
+  /*border:1px solid #333;*/
+  padding:20px;
+}
+.page-title{
+  margin-left: 100px;
+}
+.new-lines{
+  boeder:1px solid #333;
+  padding:20px;
+  width: 100%;
+}
+body{
+/*  background: #6dd5fa;  /* fallback for old browsers */
+ background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);*/
+}
+.row{
+   box-shadow: 18px 6px ;  /* fallback for old browsers */
+
+}
+body h2{
+  color:white;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-family: 'Marmelad', sans-serif;
+
+}

@@ -1,0 +1,63 @@
+<html ng-app="register">
+<head>
+  <title>Meassage</title>
+ <link href="https://fonts.googleapis.com/css?family=Marmelad|Prociono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="angular-route.js"></script>
+  <script type="text/javascript">
+
+      var app=angular.module('register',['ngRoute']);
+
+      app.config(function($routeProvider, $locationProvider){
+      $routeProvider
+      .when('/', {
+        templateUrl: 'home.html',
+        controller: 'homecontroller',
+
+      })
+      .when('/#signup', {
+          templateUrl: 'signup.html',
+          controller: 'signcontroller',
+
+        });
+      });
+
+      app.controller('homecontroller', function($scope, $http) {
+
+        $scope.submitfun = function() {
+
+            $http.post('/lines',{newlines:$scope.newlines}).then(function() {
+              getlines();
+              $scope.newlines='';
+            });
+
+         };
+
+         $scope.removelines = function(line) {
+
+           $http.put('/lines/remove', {line:line}).then(function() {
+             getlines();
+           });
+         };
+          function getlines() {
+            $http.get('/lines').then(function(response) {
+                $scope.lines = response.data;
+              });
+          }
+          getlines();
+
+        });
+
+        app.controller('signcontroller', function($scope, $http) {
+            console.log('you are on the sign up page');
+         });
+</script>
+</head>
+<body>
+  &nbsp &nbsp &nbsp<h2 class="page-title">billing</h2>
+<div ng-view></div>
+</body>
+</html>

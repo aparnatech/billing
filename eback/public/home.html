@@ -1,0 +1,24 @@
+<div class="row feed">
+<div class="col-md-4">
+<h4>Login:<h4>
+<br><br>
+  <input type="text" size="30" placeholder="Username">
+  <br><br>
+  <input type="password" size="30" placeholder="password"></input><br>
+  <br>
+  <a href ="#/signup">Not a member? sign up</a>
+</div>
+<div class="col-md-8">
+  <div class="new-lines">
+    <input type="text"  class="form-control"  ng-model="newlines" placeholder="add a item">
+    <br>
+    <br>
+    <button class="btn" type="button" ng-click="submitfun()">add</button>
+  </div>
+  <h3 ng-repeat="line in lines">
+    <span class="glyphicon glyphicon-ok" aria="true"></span>
+    {{line.text}}
+    <a href ng-click="removelines(line)"><span class="glyphicon glyphicon-remove"></span></a>
+</h3>
+</div>
+</div>
